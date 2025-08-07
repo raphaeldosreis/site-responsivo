@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Desafio DIO - Responsividade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f6f6f6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    header {
+      width: 100vw;
+    }
+
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* SECTION 1 */
+    .section-1 {
+      width: 1280px;
+      margin: 50px auto 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 16px;
+      padding: 0 50px;
+    }
+
+    .section-1 img {
+      width: 607px;
+      height: 394px;
+    }
+
+    .section-1-text {
+      width: 348px;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .section-1-text h2 {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 130%;
+      margin-bottom: 20px;
+    }
+
+    .section-1-text p {
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+    /* SECTION 2 */
+    .section-2 {
+      width: 100vw;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgb(240, 240, 240);
+      gap: 16px;
+      padding: 50px;
+    }
+
+    .section-2-text {
+      width: 348px;
+      margin-right: 20px;
+    }
+
+    .section-2-text h2 {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 130%;
+      margin-bottom: 16px;
+    }
+
+    .section-2-text p {
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+    .section-2 img {
+      width: 607px;
+      height: 394px;
+    }
+
+    /* SECTION 3 */
+    .section-3 {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 50px;
+    }
+
+    .section-3 img {
+      width: 607px;
+      height: 394px;
+    }
+
+    .section-3-text {
+      width: 348px;
+      margin-left: 20px;
+    }
+
+    .section-3-text h2 {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 130%;
+      margin-bottom: 20px;
+    }
+
+    .section-3-text p {
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+    /* SECTION 4 */
+    .section-4 {
+      width: 100vw;
+      height: 100vh;
+      background: rgb(240, 240, 240);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-direction: column;
+    }
+
+    .section-4-content {
+      position: absolute;
+      top: 10%;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+      padding: 0 20px;
+    }
+
+    .section-4-content h2 {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+
+    .section-4-content p {
+      font-size: 16px;
+      line-height: 130%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .section-4 img {
+      width: 784px;
+      height: 508px;
+      margin-top: 10%;
+      object-fit: contain;
+      z-index: 0;
+    }
+
+    /* FOOTER */
+    .footer {
+      width: 100vw;
+      height: 120px;
+      background-color: rgba(35, 39, 42, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer img {
+      height: 60px;
+      width: auto;
+    }
+
+    /* RESPONSIVO IPHONE 13 PRO MAX */
+    @media (max-width: 430px) {
+      header,
+      .section-1,
+      .section-2,
+      .section-3,
+      .section-4,
+      .footer {
+        width: 100vw;
+        padding: 20px;
+        flex-direction: column;
+        height: auto;
+      }
+
+      .section-1,
+      .section-2,
+      .section-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+      }
+
+      .section-1 img,
+      .section-2 img,
+      .section-3 img {
+        width: 100%;
+        height: auto;
+      }
+
+      .section-1-text,
+      .section-2-text,
+      .section-3-text {
+        width: 100%;
+        margin: 0;
+      }
+
+      .section-1-text h2,
+      .section-2-text h2,
+      .section-3-text h2 {
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 1.3;
+      }
+
+      .section-1-text p,
+      .section-2-text p,
+      .section-3-text p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .section-4 {
+  height: auto;
+  padding: 40px 20px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section-4-content {
+  position: static;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.section-4-content h2 {
+  font-family: 'Luckiest Guy';
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.section-4-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.section-4 img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-top: 0;
+}
+
+
+
+      
+        
+
+      .footer {
+        height: 80px;
+      }
+
+      .footer img {
+        height: 32px;
+      }
+
+      /* TROCA DA IMAGEM DO HEADER EM TELAS PEQUENAS */
+      header img {
+        content: url('IMAGENS/header-mobile.png');
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="IMAGENS/Header.png" alt="Banner">
+  </header>
+
+  <!-- SECTION 1 -->
+  <section class="section-1">
+    <img src="IMAGENS/Section Image.png" alt="Ilustração de convite">
+    <div class="section-1-text">
+      <h2>Crie um espaço controlado por convite onde você se sinta em casa</h2>
+      <p>Os servidores Discord são organizados em canais com assuntos para vocês colaborarem, compartilharem ou simplesmente falarem do dia sem entupir um chat geral.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="section-2">
+    <div class="section-2-text">
+      <h2>Aqui é fácil se encontrar</h2>
+      <p>Entre no canal de voz quando estiver à toa. Amigos no mesmo servidor podem te ver e entrar imediatamente, sem nem ter que fazer a chamada.</p>
+    </div>
+    <img src="IMAGENS/Section Image (1).png" alt="Conversa entre amigos no Discord">
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="section-3">
+    <img src="IMAGENS/section 3.png" alt="Ilustração de convite">
+    <div class="section-3-text">
+      <h2>Para poucos e para muitos</h2>
+      <p>Organize qualquer comunidade com ferramentas de moderação e acesso personalizado a membros. Dê poderes especiais aos membros, monte canais privados e muito mais.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 4 -->
+  <section class="section-4">
+    <div class="section-4-content">
+      <h2>TECNOLOGIA DE CONEXÃO<br>CONFIÁVEL</h2>
+      <p>
+        Voz e vídeo de baixa latência, para você conversar como se estivesse na mesma sala. Dê um joinha por vídeo,
+        veja amigos transmitirem a jogatina do dia ou junte uma galera pra desenhar na tela compartilhada.
+      </p>
+    </div>
+    <img src="IMAGENS/section 4.png" alt="Tecnologia de conexão confiável">
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="IMAGENS/svgexport-15 1.png" alt="Ícone central do rodapé">
+  </footer>
+
+</body>
+</html>
